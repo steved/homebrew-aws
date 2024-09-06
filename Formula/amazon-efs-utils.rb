@@ -17,13 +17,13 @@ class AmazonEfsUtils < Formula
 
   version "1.35.2"
   sha256 "257c67ec8ba3dacf1d2a1849042c5663717d863bfda130098f241e5fbd01d821"
-  
+
   url "https://aws-homebrew.s3.us-west-2.amazonaws.com/formula/amazon-efs-utils/v#{version}.tar.gz"
   desc "Utilities for Amazon Elastic File System (EFS)"
   homepage "https://aws.amazon.com/efs/"
   license "MIT"
 
-  depends_on "python@3"
+  depends_on "python@3.9"
   depends_on "stunnel"
 
   resource "atomicwrites" do
