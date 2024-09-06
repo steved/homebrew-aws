@@ -167,7 +167,7 @@ class AmazonEfsUtils < Formula
   end
 
   def install
-    venv = virtualenv_create(libexec, "python3")
+    venv = virtualenv_create(libexec, "python3.9")
     %w[atomicwrites attrs botocore configparser coverage entrypoints flake8 funcsigs jmespath mccabe
        mock more-itertools packaging pbr pluggy py pycodestyle pyflakes pyparsing pytest pytest-cov pytest-html
        pytest-metadata pytest-mock python-dateutil six urllib3 wcwidth].each do |r|
